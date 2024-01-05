@@ -1,0 +1,140 @@
+
+:root{
+   
+    --ff-mystyle: 'Poppins', sans-serif; 
+
+    --fw-small:200;
+    --fw-medium:400;
+    --fw-large:600;
+
+
+    --fs-small:0.987rem;
+    --fs-medium:1.25rem;
+    --fs-semi-bold:1.675rem;
+    --fs-large:min(calc(1.235rem + 2.25vw),2.2rem);
+
+    --clr-dark-blue:hsl(234, 12%, 34%);
+    --clr-grayish-blue:hsl(229, 6%, 66%);
+    --clr-light-gray:hsl(0, 0%, 98%);
+
+--clr-Red: hsl(0, 78%, 62%);
+--clr-Cyan: hsl(180, 62%, 55%);
+--clr-Orange: hsl(34, 97%, 64%);
+--clr-Blue: hsl(212, 86%, 64%);
+
+
+}
+
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+   
+}
+
+body{
+    margin: 0;
+    padding-block: 4rem;
+    padding-inline: 2rem;
+    font-family: var(--ff-mystyle);
+    background-color: var(--clr-light-gray);
+    font-size: 16px;
+}
+
+img{
+    max-width: 100%;
+}
+
+h1,
+h2,h3{
+    font-size: var(--fs-large);
+    color: var(--clr-dark-blue);
+    
+}
+
+h1{
+    font-weight: var(--fw-small);
+}
+.span-heading{
+    font-weight: var(--fw-large);
+}
+p{
+    font-size: var(--fs-small);
+    color: var(--clr-grayish-blue);
+}
+
+.wrapper--narrow{
+    max-width: 550px;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.wrapper{
+    --gap:2rem;
+max-width: 1200px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: var(--gap);
+margin-inline: auto;
+margin-top: 5rem;
+}
+
+.wrapper>*{
+    flex: 1;
+}
+
+.card{
+    background-color: white;
+}
+.card{
+padding-inline: 5rem;
+
+}
+.card>h2{
+    font-size: var(--fs-medium);
+}
+
+.col-collect{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap);
+}
+.card{
+    padding: 1rem;
+box-shadow:0 1rem 1.5rem -0.5rem rgb(0 50 100 / 0.15); 
+border-radius: 0.5rem;
+}
+
+.border-red{
+    border-top: 5px solid var(--clr-Red);
+    border-radius: 0.5rem;
+}
+.border-cyan{
+    border-top: 5px solid var(--clr-Cyan);
+    border-radius: 0.5rem;
+}
+.border-orange{
+    border-top: 5px solid var(--clr-Orange);
+    border-radius: 0.5rem;
+}
+.border-blue{
+    border-top: 5px solid var(--clr-Blue);
+    border-radius: 0.5rem;
+  
+}
+.card>img{
+    display: block;
+    margin-left: auto;
+    margin-right: 2rem;
+}
+
+@media screen and (max-width:970px){
+    .wrapper{
+        flex-direction: column;
+    }
+    
+}
